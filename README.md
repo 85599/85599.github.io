@@ -40,13 +40,3 @@ logs go to [dev.to/khushaljain023](https://dev.to/khushaljain023).
 * AOS - scroll animations via `data-aos` attributes
 * Font Awesome 4.7.0 + the theme's `et-line` icon set
 * The theme's own `intro-typing` / `skill` / `offer-box` components - the intro text is **not** Typed.js
-
-## Editing this site
-
-| To change | Edit |
-| :--- | :--- |
-| Any section's copy | `index.html` - one file, sections are marked with banner comments |
-| The typed hero text | `settings/config.js` → `introTypingTexts` |
-| Project thumbnails | `assets/images/portfolio/*.jpg` (1600×900) |
-| The resume PDF behind "Download my resume" | `assets/Khushal_Jain_Resume.pdf` - overwrite in place, the link never changes |
-| Particle field effect | `settings/particles-config.json` |
