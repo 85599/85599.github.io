@@ -50,31 +50,3 @@ logs go to [dev.to/khushaljain023](https://dev.to/khushaljain023).
 | Project thumbnails | `assets/images/portfolio/*.jpg` (1600×900) |
 | The resume PDF behind "Download my resume" | `assets/Khushal_Jain_Resume.pdf` - overwrite in place, the link never changes |
 | Particle field effect | `settings/particles-config.json` |
-
-Run it locally with a static server, not by opening the file directly:
-
-```bash
-python -m http.server 8123
-# http://127.0.0.1:8123/index.html
-```
-
-A `file://` origin blocks the XHR that loads `settings/particles-config.json`, so the hero
-background silently disappears.
-
-Two gotchas worth knowing:
-
-* The `et-line` set has no glyph for `icon-dashboard`, `icon-signal`, `icon-tasks`,
-  `icon-certificate`, `icon-console` or `icon-equalizer` - those render as blank boxes.
-  Verified-working alternatives: `icon-browser`, `icon-bargraph`, `icon-linegraph`,
-  `icon-strategy`, `icon-genius`, `icon-target`.
-* Project cards keep their colour and their caption permanently visible. The upstream theme
-  greys every thumbnail out and hides the title until hover, which reads badly for real
-  product screenshots and does not work on touch at all.
-
-## Deploy
-
-Push to `master`. GitHub Pages serves this branch directly - there is no build job to wait for.
-
-## License
-
-MIT - see [LICENSE](./LICENSE).
