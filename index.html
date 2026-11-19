@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
-    <title>Khushal Jain</title>
+    <title>Khushal Jain — Trader &amp; FinTech developer, Indian markets</title>
+    <meta name="description" content="Khushal Jain builds open-source tools for Indian markets: NSE/BSE stock screeners, Pine Script toolkits, AI options desks and market-data MCP servers. Analytics Specialist in Jaipur, India.">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Khushal Jain — Trader &amp; FinTech developer">
+    <meta property="og:description" content="Open-source tools for Indian markets: stock screeners, Pine Script toolkit, AI options desks and MCP servers.">
+    <meta property="og:url" content="https://85599.github.io/">
+    <meta property="og:image" content="https://85599.github.io/assets/images/logo.png">
+    <meta name="twitter:card" content="summary">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&amp;subset=latin-ext" rel="stylesheet">
     <!-- CSS Libraries -->
@@ -26,6 +33,61 @@
             .Intro.Intro--single-photo {
                 background-attachment: scroll;
             }
+        }
+
+        /* Project thumbnails are real screenshots of live tools - keep them in colour,
+           and keep the caption visible so the card is readable without hovering. */
+        .Blog__post-image img {
+            -webkit-filter: none;
+            filter: none;
+        }
+        .Blog__post-caption {
+            opacity: 1;
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 60%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 60%);
+            padding: 46px 20px 16px;
+        }
+        .Blog__post-caption a {
+            color: #ffffff;
+        }
+        .Blog__post-caption h4 {
+            font-size: 14px;
+        }
+        .Blog__post-categories {
+            margin-top: 8px;
+        }
+        .Blog__post-categories li {
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+        .Blog__post-categories a {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+        .writing-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 18px 0 0;
+        }
+        .writing-list li {
+            display: block;
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6em;
+        }
+        .writing-list li:before {
+            content: '';
+            width: 8px;
+            height: 1px;
+            background: #000000;
+            position: absolute;
+            left: 0;
+            top: 12px;
+        }
+        .writing-list a {
+            color: #000000;
         }
     </style>
 
@@ -51,7 +113,7 @@
             <nav class="Navigation__bar navbar navbar-fixed-top">
                 <div class="navbar-header">
                     <a class="navbar-brand page-scroll" href="#Intro">
-                        <img src="assets/images/logo.png" alt="Tej" class="img-responsive">
+                        <img src="assets/images/logo.png" alt="Khushal Jain" class="img-responsive">
                     </a>
                     <div class="Navigation__mobile-menu">
                         <span></span>
@@ -102,16 +164,18 @@
                             <div class="about-me">
                                 <h4 data-aos="fade">Some words about me</h4>
                                 <div class="about-me-text ta-j" data-aos="fade">
-                                    <p> I'm working as Analytics Specialist for <b><a href="https://tharshare.com/" target="_blank">Thar share Brokers Private Limited</a></b> in Jaipur, India. 
-                                        I specialize in application of Machine Learning, Deep Learning, NLP and Big Data, and have led many machine Learning and AI projects on behalf of Rosebay.
-                                        As a Software Developer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create beautiful products. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.
+                                    <p> I'm working as Analytics Specialist for <b><a href="https://tharshare.com/" target="_blank">Thar share Brokers Private Limited</a></b> in Jaipur, India,
+                                        where I work on Indian markets data — NSE and BSE quotes, option chains and broker position books.
+                                        Alongside that I build and maintain <b><a href="https://github.com/85599" target="_blank">28 open-source tools</a></b> for Indian traders:
+                                        stock screeners, an AI options desk, a Pine Script toolkit and a free learning index.
+                                        As a Software Developer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create beautiful products.
+                                        The rule every one of these tools follows: <b>every number carries its source</b>, and nothing gets papered over.
 
                                         <br>
-                                        I am passionate about research on making digitial agents that explores, learns, and acts on its own.
-                                        My deepest interest is research on <b>Machine General Intelligence </b>, <b>Natural Language Processing</b>,
-                                        <b>Deep Learning</b>, <b>Computer Vision </b>, <b>Probabilistic and Statistical Inference</b>,
-                                        <b>Bayesian Machine Learning </b>,
-                                        <b> Reinforcement Learning </b>.
+                                        I am passionate about research on making digital agents that explore, learn, and act on their own.
+                                        My current focus is <b>AI agents for market research</b>, <b>MCP (Model Context Protocol) servers</b>,
+                                        <b>local LLMs</b>, <b>Pine Script</b>, <b>backtesting and strategy research</b> and
+                                        <b>OCR of broker screenshots</b>.
 
                                         <br>
                                     </p>
@@ -121,21 +185,19 @@
                         <!-- ========================================= SKILLS ========================================= -->
                         <div class="col-md-5 col-md-offset-1">
                             <div class="about-me-skills">
-                                <h4 data-aos="fade">My skils</h4>
-                                <skill percent="90">Python <span class="c-silver">/ 2+ years of experience</span></skill>
-                                <skill percent="95">Data Analysis and Visualization <span class="c-silver">/ 3+ years of experience</span></skill>
-                                <skill percent="90">Machine Learning <span class="c-silver">/ 2+ years of experience</span></skill>
-                                <skill percent="70">Deep Learning <span class="c-silver">/ 1+ years of experience</span></skill>
-                                <skill percent="90">Shell Scripting <span class="c-silver">/ 2+ years of experience</span></skill>
-                                <skill percent="60">Big Data on HDP and Cloudera <span class="c-silver">/  6+ months of experience</span></skill>
-                                <skill percent="70">Databases <span class="c-silver">/ MongoDB, ElasticSearch, MySQL, SQLite</span></skill>
-                                <skill percent="30">Django, Flask <span class="c-silver">/ 4+ months of experience</span></skill>
-                                <skill percent="80">CCNA <span class="c-silver">/ 3 months of experience</span></skill>
-                                <skill percent="70">HTML, CSS <span class="c-silver">/ 1 years of experience</span></skill>
-                                <skill percent="90">MATLAB<span class="c-silver">/ 2+ years of experience</span></skill>
-                                <skill percent="90">Arduino <span class="c-silver">/  3+ years of experience</span></skill>
-                                <skill percent="70">C, C++ <span class="c-silver">/ 1+ years of experience</span></skill>
-                                <skill percent="50">Javascript <span class="c-silver">/ 2 month of experience</span></skill>
+                                <h4 data-aos="fade">My skills</h4>
+                                <skill percent="95">Indian Market Data <span class="c-silver">/ NSE &amp; BSE, yfinance, live option chains</span></skill>
+                                <skill percent="90">Python <span class="c-silver">/ Pandas, NumPy, 28 open-source repos</span></skill>
+                                <skill percent="90">Pine Script <span class="c-silver">/ v5 &amp; v6 indicators, strategies, linter</span></skill>
+                                <skill percent="90">Streamlit &amp; Flask <span class="c-silver">/ 6 live public tools</span></skill>
+                                <skill percent="90">Data Analysis &amp; Visualization <span class="c-silver">/ dashboards, charts, reports</span></skill>
+                                <skill percent="85">Backtesting &amp; Strategy Research <span class="c-silver">/ golden ratio, pivots, opening range</span></skill>
+                                <skill percent="80">LLM Integration &amp; AI Agents <span class="c-silver">/ Ollama, Groq, Anthropic</span></skill>
+                                <skill percent="80">JavaScript &amp; TypeScript <span class="c-silver">/ Node.js, React, Socket.IO</span></skill>
+                                <skill percent="75">MCP Servers <span class="c-silver">/ Model Context Protocol tooling</span></skill>
+                                <skill percent="75">Databases <span class="c-silver">/ SQLite, MongoDB, Firebase</span></skill>
+                                <skill percent="70">Docker &amp; CI <span class="c-silver">/ GitHub Actions, Pages, Render</span></skill>
+                                <skill percent="70">OCR &amp; Document Parsing <span class="c-silver">/ Windows OCR, Tesseract</span></skill>
 
                             </div>
                         </div>
@@ -158,36 +220,36 @@
                         <div class="col-sm-6 col-md-3">
                             <div class="offer-wrap" data-aos="fade" data-aos-delay="300">
                                 <div class="offer-box">
-                                    <i class="icon-laptop"></i>
-                                    <h4>Data Analysis & Visualization</h4>
-                                    <p>Every company has a lot of data which needs the story telling</p>
+                                    <i class="icon-browser"></i>
+                                    <h4>Trading Tools &amp; Dashboards</h4>
+                                    <p>Python and Streamlit screens for NSE/BSE screening, option chains and live position risk</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">
                             <div class="offer-wrap" data-aos="fade" data-aos-delay="150">
                                 <div class="offer-box">
-                                    <i class="icon-tools"></i>
-                                    <h4>Machine Learning and AI</h4>
-                                    <p>Develop optimized, and scalable Machine Learning models</p>
+                                    <i class="icon-strategy"></i>
+                                    <h4>Pine Script &amp; TradingView</h4>
+                                    <p>Indicators, intraday strategies, and a toolkit that lints, formats and upgrades Pine v4 to v6</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">
                             <div class="offer-wrap" data-aos="fade" data-aos-delay="450">
                                 <div class="offer-box">
-                                    <i class="icon-laptop "></i>
-                                    <h4>AI Research</h4>
-                                    <p>Very passionate to make contribution on Machine Intelligence, NLP and Computer Vision research</p>
+                                    <i class="icon-genius"></i>
+                                    <h4>AI Agents &amp; LLM Integration</h4>
+                                    <p>Research agents on local LLMs and MCP servers, so every claim carries the data it came from</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">
                             <div class="offer-wrap" data-aos="fade">
                                 <div class="offer-box">
-                                    <i class="icon-laptop"></i>
-                                    <h4>Big Data and Analytics</h4>
-                                    <p>Apply Hortonworks Data Platform and Cloudera framework for Bigdata</p>
+                                    <i class="icon-linegraph"></i>
+                                    <h4>Strategy Research &amp; Backtesting</h4>
+                                    <p>Rule-based systems on completed bars, with costs included and results stated honestly</p>
                                 </div>
                             </div>
                         </div>
@@ -198,33 +260,6 @@
         </section>
         <!-- ========================================= SERVICES SECTION :END ========================================= -->
 
-        <!-- ========================================= COUNTERS SECTION ========================================= -->
-        <div class="section paralax-counters" id="Counters">
-            <div class="section--basic">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3 col-xs-6">
-                            <counter data-aos="fade" data-aos-offset="150" :number="80" text="Project completed"
-                                icon="fa fa-code" inline-tepmlate></counter>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <counter data-aos="fade" data-aos-offset="150" data-aos-delay="100" :number="30"
-                                text="Happy Customers" icon="fa fa-heart"></counter>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <counter data-aos="fade" data-aos-offset="150" data-aos-delay="150" :number="580"
-                                text="Cups of coffee" icon="fa fa-coffee"></counter>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <counter data-aos="fade" data-aos-offset="150" data-aos-delay="250" :number="100"
-                                text="Awards" icon="fa fa-trophy"></counter>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ========================================= COUNTERS SECTION :END ========================================= -->
-
         <!-- ========================================= PORTFOLIO SECTION ========================================= -->
 
         <section id="Portfolio">
@@ -233,10 +268,19 @@
                     <div class="headline">
                         <h2>My Resume</h2>
                     </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 about-me-text ta-j" data-aos="fade">
+                            <p> Analytics Specialist at <b>Thar share Brokers Private Limited</b>, Jaipur - Indian markets data,
+                                option chains and broker position books. Alongside that I ship open-source trading tools in Python,
+                                Streamlit and Pine Script, and write up what actually broke in them.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="buttons-group buttons-group-center mt-3 Portfolio-see-more" data-aos="fade">
-                    <a href="assets/khushal-jain.pdf" class="btn btn-black btn-right-icon">Click to Download
+                    <a href="assets/khushal-jain.pdf" class="btn btn-black btn-right-icon">Download my resume
+                        <i class="fa fa-long-arrow-right"></i></a>
+                    <a href="https://www.linkedin.com/in/khushal-jain-3a2717192/" target="_blank" rel="noopener" class="btn btn-black btn-right-icon">LinkedIn profile
                         <i class="fa fa-long-arrow-right"></i></a>
                 </div>
             </div>
@@ -257,72 +301,147 @@
                             <div class="col-sm-3" data-aos="fade">
                                 <div class="Blog__post">
                                     <div class="Blog__post-image">
-                                        <a href="https://github.com/85599/Niftytechnical-analysis"><img src="assets/images/smart_glove_image.jpg" alt="https://www.dreamstime.com/stock-image-mute-deaf-image24008221"></a>
+                                        <a href="https://github.com/85599/KJStockScreener" target="_blank" rel="noopener"><img src="assets/images/portfolio/kjstockscreener.jpg" alt="KJStockScreener - live NSE screener dashboard"></a>
                                     </div>
                                     <div class="Blog__post-caption">
-                                        <a href="https://github.com/85599/Niftytechnical-analysis">
-                                            <h4>Technical Analysis</h4>
+                                        <a href="https://github.com/85599/KJStockScreener" target="_blank" rel="noopener">
+                                            <h4>KJStockScreener</h4>
                                         </a>
                                         <ul class="Blog__post-categories">
-                                            <li>Khushal jain,</li>
-                                            <li>First project</li>
+                                            <li>AI-native NSE screener</li>
+                                            <li><a href="https://kjstockscreener.streamlit.app/" target="_blank" rel="noopener">Live</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3" data-aos="fade" data-aos-delay="200">
+                            <div class="col-sm-3" data-aos="fade" data-aos-delay="150">
                                 <div class="Blog__post">
                                     <div class="Blog__post-image">
-                                        <a href="https://github.com/85599/Quantitative-FRM---Market-Risk-App"><img src="assets/images/naamii-winter-school.jpg" alt=""></a>
+                                        <a href="https://github.com/85599/pinesprout" target="_blank" rel="noopener"><img src="assets/images/portfolio/pinesprout.jpg" alt="PineSprout Studio - Pine Script toolkit"></a>
                                     </div>
                                     <div class="Blog__post-caption">
-                                        <a href="https://github.com/85599/Quantitative-FRM---Market-Risk-App">
-                                            <h4>Market-Risk-App</h4>
+                                        <a href="https://github.com/85599/pinesprout" target="_blank" rel="noopener">
+                                            <h4>PineSprout Studio</h4>
                                         </a>
                                         <ul class="Blog__post-categories">
-                                            <li>Reputed AI Researchers lectures contents and notebooks</li>
-
+                                            <li>Pine Script v5 / v6 toolkit</li>
+                                            <li><a href="https://pinesprout-khushaljain023.streamlit.app/" target="_blank" rel="noopener">Live</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-sm-3" data-aos="fade" data-aos-delay="400">
+                            <div class="col-sm-3" data-aos="fade" data-aos-delay="300">
                                 <div class="Blog__post">
                                     <div class="Blog__post-image">
-                                        <a href="https://github.com/85599/Stockify"><img src="assets/images/zipcode-validator.png" alt=""></a>
+                                        <a href="https://github.com/85599/BankNIFTY-Golden-Ratio-Strategy" target="_blank" rel="noopener"><img src="assets/images/portfolio/banknifty.jpg" alt="BankNIFTY golden ratio strategy chart with Fibonacci levels"></a>
                                     </div>
-                                <div class="Blog__post-caption">
-                                    <a href="https://github.com/85599/Stockify">
-                                    <h4>A simple stock watchlist. Simply search for your favorite stocks and you'll get a list of nice brief quotes.</h4>
-                                    </a>
-                                    <ul class="Blog__post-categories">
-                                        <li>Khushal Jain</li>
-
-                                    </ul>
+                                    <div class="Blog__post-caption">
+                                        <a href="https://github.com/85599/BankNIFTY-Golden-Ratio-Strategy" target="_blank" rel="noopener">
+                                            <h4>BankNIFTY Golden Ratio</h4>
+                                        </a>
+                                        <ul class="Blog__post-categories">
+                                            <li>Intraday Fib strategy</li>
+                                            <li>19 stars</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3" data-aos="fade" data-aos-delay="450">
+                                <div class="Blog__post">
+                                    <div class="Blog__post-image">
+                                        <a href="https://github.com/85599/Strike-and-Hedge" target="_blank" rel="noopener"><img src="assets/images/portfolio/strike-hedge.jpg" alt="Strike and Hedge AI options desk interface"></a>
+                                    </div>
+                                    <div class="Blog__post-caption">
+                                        <a href="https://github.com/85599/Strike-and-Hedge" target="_blank" rel="noopener">
+                                            <h4>Strike &amp; Hedge</h4>
+                                        </a>
+                                        <ul class="Blog__post-categories">
+                                            <li>AI options desk</li>
+                                            <li>Rule-based signals</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                            <div class="col-sm-3" data-aos="fade" data-aos-delay="400">
+                        <div class="row">
+                            <div class="col-sm-3" data-aos="fade">
                                 <div class="Blog__post">
                                     <div class="Blog__post-image">
-                                        <a href="https://github.com/85599/BankNIFTY-Golden-Ratio-Strategy"><img src="assets/images/blog/blog3.jpg" alt=""></a>
+                                        <a href="https://github.com/85599/Research-Copilot-Pro" target="_blank" rel="noopener"><img src="assets/images/portfolio/research-copilot.jpg" alt="Research Copilot Pro NIFTY 50 overview screen"></a>
                                     </div>
                                     <div class="Blog__post-caption">
-                                        <a href="https://github.com/85599/BankNIFTY-Golden-Ratio-Strategy">
-                                            <h4>Sentiment Analysis of NSE Market Data</h4>
+                                        <a href="https://github.com/85599/Research-Copilot-Pro" target="_blank" rel="noopener">
+                                            <h4>Research-Copilot Pro</h4>
                                         </a>
                                         <ul class="Blog__post-categories">
-                                            <li>Khushal Jain,</li>
-                                            <li>Khushal Jain</li>
+                                            <li>Market research terminal</li>
+                                            <li>Scored AI runs</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-sm-3" data-aos="fade" data-aos-delay="150">
+                                <div class="Blog__post">
+                                    <div class="Blog__post-image">
+                                        <a href="https://github.com/85599/nifty-desk" target="_blank" rel="noopener"><img src="assets/images/portfolio/nifty-desk.jpg" alt="Nifty Desk landing page"></a>
+                                    </div>
+                                    <div class="Blog__post-caption">
+                                        <a href="https://github.com/85599/nifty-desk" target="_blank" rel="noopener">
+                                            <h4>Nifty Desk</h4>
+                                        </a>
+                                        <ul class="Blog__post-categories">
+                                            <li>Broker screenshot to Excel</li>
+                                            <li><a href="https://85599.github.io/nifty-desk/" target="_blank" rel="noopener">Live</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3" data-aos="fade" data-aos-delay="300">
+                                <div class="Blog__post">
+                                    <div class="Blog__post-image">
+                                        <a href="https://github.com/85599/MarketMitra-AI" target="_blank" rel="noopener"><img src="assets/images/portfolio/marketmitra-ai.jpg" alt="MarketMitra AI multi-asset dashboard"></a>
+                                    </div>
+                                    <div class="Blog__post-caption">
+                                        <a href="https://github.com/85599/MarketMitra-AI" target="_blank" rel="noopener">
+                                            <h4>MarketMitra AI</h4>
+                                        </a>
+                                        <ul class="Blog__post-categories">
+                                            <li>Multi-asset dashboard</li>
+                                            <li>Docker + FastAPI</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3" data-aos="fade" data-aos-delay="450">
+                                <div class="Blog__post">
+                                    <div class="Blog__post-image">
+                                        <a href="https://github.com/85599/MarketMitra-Learn" target="_blank" rel="noopener"><img src="assets/images/portfolio/marketmitra-learn.jpg" alt="MarketMitra Learn free Indian market resources index"></a>
+                                    </div>
+                                    <div class="Blog__post-caption">
+                                        <a href="https://github.com/85599/MarketMitra-Learn" target="_blank" rel="noopener">
+                                            <h4>MarketMitra Learn</h4>
+                                        </a>
+                                        <ul class="Blog__post-categories">
+                                            <li>2,606 free resources</li>
+                                            <li><a href="https://85599.github.io/MarketMitra-Learn/" target="_blank" rel="noopener">Live</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-
+                    <div class="row mt-3">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h4 data-aos="fade">Writing</h4>
+                            <p class="c-silver" data-aos="fade">Build logs on <b><a href="https://dev.to/khushaljain023" target="_blank" rel="noopener">dev.to/khushaljain023</a></b> - what broke, the real numbers, and the limits I did not paper over.</p>
+                            <ul class="writing-list" data-aos="fade">
+                                <li><a href="https://dev.to/khushaljain023/i-indexed-2606-legally-free-resources-to-learn-the-indian-stock-market-heres-how-the-no-build-4b1m" target="_blank" rel="noopener">Indexing 2,606 free ways to learn the Indian market</a></li>
+                                <li><a href="https://dev.to/khushaljain023/98-stars-across-26-repos-taught-me-that-engineering-effort-and-github-stars-are-unrelated-1j9f" target="_blank" rel="noopener">98 stars taught me effort and stars are unrelated</a></li>
+                                <li><a href="https://dev.to/khushaljain023/vision-models-fake-precision-on-charts-so-i-made-every-number-carry-its-source-4a4p" target="_blank" rel="noopener">Vision models fake precision on charts</a></li>
+                                <li><a href="https://dev.to/khushaljain023/there-is-no-official-grammar-for-pine-script-so-i-wrote-a-small-one-3eh3" target="_blank" rel="noopener">I wrote a grammar for Pine Script</a></li>
+                            </ul>
+                            <p class="mt-2" data-aos="fade">Ideas and scripts published on <b><a href="https://in.tradingview.com/u/khushaljain023/" target="_blank" rel="noopener">TradingView</a></b>.</p>
                         </div>
                     </div>
                 </div>
@@ -406,6 +525,15 @@
                                     <div class="Contact__detail" data-aos="fade">
                                         <i class="fa fa-map-marker"></i> Jaipur, India
                                     </div>
+                                    <div class="Contact__detail" data-aos="fade">
+                                        <i class="fa fa-github"></i> <a href="https://github.com/85599" target="_blank" rel="noopener">github.com/85599</a> - 28 repos, 118 stars
+                                    </div>
+                                    <div class="Contact__detail" data-aos="fade">
+                                        <i class="fa fa-bar-chart"></i> <a href="https://in.tradingview.com/u/khushaljain023/" target="_blank" rel="noopener">TradingView</a> - indicators &amp; strategy ideas
+                                    </div>
+                                    <div class="Contact__detail" data-aos="fade">
+                                        <i class="fa fa-pencil"></i> <a href="https://dev.to/khushaljain023" target="_blank" rel="noopener">dev.to/khushaljain023</a> - build logs
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -427,15 +555,17 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <img src="assets/images/logo.png" alt="Tej">
-                        <div class="copyrights">© 2021 Khushal - ALL RIGHTS RESERVED</div>
+                        <img src="assets/images/logo.png" alt="Khushal Jain">
+                        <div class="copyrights">© 2026 Khushal Jain - ALL RIGHTS RESERVED</div>
                     </div>
                     <div class="col-sm-4">
                         <div class="footer-socials">
-                            <a href="https://www.facebook.com/khushal.jain.31542"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/khushal-jain-3a2717192/"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                            <a href="https://github.com/85599"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-
+                            <a href="https://github.com/85599" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/khushal-jain-3a2717192/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="https://in.tradingview.com/u/khushaljain023/" target="_blank" rel="noopener" title="TradingView"><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+                            <a href="https://dev.to/khushaljain023" target="_blank" rel="noopener" title="dev.to"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                            <a href="https://x.com/khushaljai48011" target="_blank" rel="noopener" title="X"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/khushaljain99827" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>

@@ -25,7 +25,9 @@ window.Config = {
     introStaticText: "I'm", // Static text
     introTypingTexts: [ // Set of texts to display in Typing Texts module
         "Khushal Jain",
-        "on pursuit of making Intelligent machines"
+        "building open-source tools for Indian markets",
+        "a trader and FinTech developer",
+        "on pursuit of making intelligent machines"
     ],
 
     /*
